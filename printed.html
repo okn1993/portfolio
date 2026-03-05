@@ -1,62 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trykt produkt &mdash; Portfolio</title>
+  <title>Trykt produkt &mdash; Olivia Neja</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page page--top">
-    <a href="index.html" class="back-link">&larr; forside</a>
 
-    <header class="section-header">
-      <p class="section-eyebrow">Portfolio</p>
-      <h1 class="section-title">Trykte produkter</h1>
-    </header>
+  <nav class="nav">
+    <a href="index.html" class="nav__name">Olivia Neja</a>
+    <ul class="nav__links">
+      <li><a href="digital.html">Digitalt</a></li>
+      <li><a href="printed.html" class="active">Trykt</a></li>
+    </ul>
+  </nav>
 
+  <header class="page-header">
+    <p class="page-header__eyebrow">Portfolio &mdash; 02</p>
+    <h1 class="page-header__title">Trykte<br>produkter</h1>
+  </header>
+
+  <section class="works">
     <div class="grid">
 
-      <!-- ── ITEM TEMPLATE ────────────────────────────────────────────────
-           Duplicate this <article> block for each new work.
-           Replace the placeholder text and the href in the download link.
-           ──────────────────────────────────────────────────────────────── -->
+      <!-- ═══════════════════════════════════════════════════════
+           KORT-SKABELON
+           Kopiér dette <article> for hvert nyt arbejde.
+           - Udskift "card__label" med kategori (fx Plakat, Magasin)
+           - Udskift "card__title" med projektets navn
+           - Skift href i download-linket til din fils sti
+           - Tilføj et preview-billede: læg billedet i mappen
+             previews/printed/ og tilføj:
+             <img src="previews/printed/filnavn.jpg" alt="..." class="card__img" />
+             inde i .card__img-wrap
+           ═══════════════════════════════════════════════════════ -->
 
       <article class="card">
-        <span class="card__label">Ruths Hotel Magasin</span>
-        <h2 class="card__title">Project Title 1</h2>
-        <p class="card__desc">Short description of this work — format, print specs, or the brief it responds to.</p>
-        <a href="files/printed/project1.pdf" download class="card__download">
-          &#8595; hent PDF
-        </a>
+        <div class="card__img-wrap">
+          <!-- <img src="previews/printed/ruths-hotel.jpg" alt="Ruths Hotel Magasin" class="card__img" /> -->
+          <div class="card__overlay">
+            <a href="files/printed/ruths-hotel-magasin.pdf" download class="card__dl">Hent PDF</a>
+          </div>
+        </div>
+        <div class="card__meta">
+          <span class="card__label">Magasin</span>
+          <h2 class="card__title">Ruths Hotel Magasin</h2>
+        </div>
       </article>
 
       <article class="card">
-        <span class="card__label">Editorial</span>
-        <h2 class="card__title">Project Title 2</h2>
-        <p class="card__desc">Short description of this work — format, print specs, or the brief it responds to.</p>
-        <a href="files/printed/project2.pdf" download class="card__download">
-          &#8595; Download
-        </a>
+        <div class="card__img-wrap">
+          <!-- <img src="previews/printed/project2.jpg" alt="Project Title 2" class="card__img" /> -->
+          <div class="card__overlay">
+            <a href="files/printed/project2.pdf" download class="card__dl">Hent PDF</a>
+          </div>
+        </div>
+        <div class="card__meta">
+          <span class="card__label">Editorial</span>
+          <h2 class="card__title">Project Title 2</h2>
+        </div>
       </article>
 
       <article class="card">
-        <span class="card__label">Packaging</span>
-        <h2 class="card__title">Project Title 3</h2>
-        <p class="card__desc">Short description of this work — format, print specs, or the brief it responds to.</p>
-        <a href="files/printed/project3.pdf" download class="card__download">
-          &#8595; Download
-        </a>
+        <div class="card__img-wrap">
+          <!-- <img src="previews/printed/project3.jpg" alt="Project Title 3" class="card__img" /> -->
+          <div class="card__overlay">
+            <a href="files/printed/project3.pdf" download class="card__dl">Hent PDF</a>
+          </div>
+        </div>
+        <div class="card__meta">
+          <span class="card__label">Packaging</span>
+          <h2 class="card__title">Project Title 3</h2>
+        </div>
       </article>
 
-      <!-- Add more cards here -->
+      <!-- Tilføj flere kort herunder -->
 
     </div>
-  </main>
+  </section>
 
-  <footer>&copy; 2026 Olivia Neja &mdash; Svendeportfolio</footer>
+  <footer>
+    <span>&copy; 2026 Olivia Neja</span>
+    <span>Grafisk Design &mdash; Svendeportfolio</span>
+  </footer>
+
 </body>
 </html>

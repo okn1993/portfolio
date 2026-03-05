@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Olivia Neja &mdash; Svendeportfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page">
-    <p class="welcome__eyebrow">Graphic Design &mdash; Final Portfolio</p>
-    <!-- Change "Your Name" to your actual name -->
-    <h1 class="welcome__name">Your Name</h1>
-    <p class="welcome__subtitle">A selection of digital and printed works</p>
 
-    <div class="btn-group">
-      <a href="digital.html" class="btn btn--primary">Digital Products</a>
-      <a href="printed.html" class="btn btn--secondary">Printed Products</a>
+  <nav class="nav">
+    <a href="index.html" class="nav__name">Olivia Neja</a>
+    <ul class="nav__links">
+      <li><a href="digital.html">Digitalt</a></li>
+      <li><a href="printed.html">Trykt</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Grafisk Design &mdash; Svendeportfolio 2026</p>
+      <h1 class="hero__title">Olivia<br>Neja</h1>
+      <div class="hero__nav">
+        <a href="digital.html" class="hero__link">Digitalt produkt</a>
+        <a href="printed.html" class="hero__link">Trykt produkt</a>
+      </div>
     </div>
-  </main>
+    <span class="hero__scroll">Scroll</span>
+  </section>
 
-  <footer>&copy; 2026 Your Name &mdash; Graphic Design</footer>
+  <div class="intro">
+    <a href="digital.html" class="intro__col">
+      <span class="intro__num">01</span>
+      <span class="intro__arrow">&nearr;</span>
+      <h2 class="intro__heading">Digitalt<br>produkt</h2>
+      <p class="intro__desc">Showreels, motion graphics og digitale designs til skærm og web.</p>
+    </a>
+    <a href="printed.html" class="intro__col">
+      <span class="intro__num">02</span>
+      <span class="intro__arrow">&nearr;</span>
+      <h2 class="intro__heading">Trykt<br>produkt</h2>
+      <p class="intro__desc">Magasiner, plakater, emballage og andre tryksager.</p>
+    </a>
+  </div>
+
+  <footer>
+    <span>&copy; 2026 Olivia Neja</span>
+    <span>Grafisk Design &mdash; Svendeportfolio</span>
+  </footer>
+
+  <script src="parallax.js"></script>
 </body>
 </html>

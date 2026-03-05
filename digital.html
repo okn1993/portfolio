@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digitalt produkt &mdash; Portfolio</title>
+  <title>Digitalt produkt &mdash; Olivia Neja</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page page--top">
-    <a href="index.html" class="back-link">&larr; Forside</a>
 
-    <header class="section-header">
-      <p class="section-eyebrow">Portfolio</p>
-      <h1 class="section-title">Digitalt produkter</h1>
-    </header>
+  <nav class="nav">
+    <a href="index.html" class="nav__name">Olivia Neja</a>
+    <ul class="nav__links">
+      <li><a href="digital.html" class="active">Digitalt</a></li>
+      <li><a href="printed.html">Trykt</a></li>
+    </ul>
+  </nav>
 
+  <header class="page-header">
+    <p class="page-header__eyebrow">Portfolio &mdash; 01</p>
+    <h1 class="page-header__title">Digitalt<br>produkt</h1>
+  </header>
+
+  <section class="works">
     <div class="grid">
 
-      <!-- ── ITEM TEMPLATE ────────────────────────────────────────────────
-           Duplicate this <article> block for each new work.
-           Replace the placeholder text and the href in the download link.
-           ──────────────────────────────────────────────────────────────── -->
+      <!-- ═══════════════════════════════════════════════════════
+           KORT-SKABELON
+           Kopiér dette <article> for hvert nyt arbejde.
+           - Udskift "card__label" med kategori (fx Motion, UI)
+           - Udskift "card__title" med projektets navn
+           - Skift href i download-linket til din fils sti
+           - Tilføj en preview-billede: læg billedet i mappen
+             previews/digital/ og tilføj:
+             <img src="previews/digital/filnavn.jpg" alt="..." class="card__img" />
+             inde i .card__img-wrap
+           ═══════════════════════════════════════════════════════ -->
 
       <article class="card">
-        <span class="card__label">Showreel / Video </span>
-        <h2 class="card__title">Bureauet Showreel</h2>
-        <p class="card__desc">Short description of this work — what it is, the tools used, or what brief it responds to.</p>
-        <a href="files/digital/project1.pdf" download class="card__download">
-          &#8595; Download
-        </a>
+        <div class="card__img-wrap">
+          <!-- <img src="previews/digital/showreel.jpg" alt="Bureauet Showreel" class="card__img" /> -->
+          <div class="card__overlay">
+            <a href="files/digital/bureauet-showreel.mp4" download class="card__dl">Hent fil</a>
+          </div>
+        </div>
+        <div class="card__meta">
+          <span class="card__label">Showreel / Video</span>
+          <h2 class="card__title">Bureauet Showreel</h2>
+        </div>
       </article>
 
-
-      <!-- Add more cards here -->
+      <!-- Tilføj flere kort herunder -->
 
     </div>
-  </main>
+  </section>
 
-  <footer>&copy; 2026 Your Name &mdash; Graphic Design</footer>
+  <footer>
+    <span>&copy; 2026 Olivia Neja</span>
+    <span>Grafisk Design &mdash; Svendeportfolio</span>
+  </footer>
+
 </body>
 </html>
